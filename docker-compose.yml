@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+
+  padesat-python:
+    build:
+      context: ./
+      dockerfile: docker/python/Dockerfile
+    container_name: padesat-python
+    volumes:
+      - ./root:/app
+    networks:
+      - traefik-network
+    working_dir: '/app/'
+    command: python -u server.py
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=80"
+      - "traefik.http.routers.padesatpython.rule=Host(`padesat.localhost`)"
+      - "traefik.http.services.padesatpython.loadbalancer.server.port=3000"
+    environment:
+      ENVIRONMENT: dev
+
+networks:
+  traefik-network:
+    external: true
