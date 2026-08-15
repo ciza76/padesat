@@ -3,166 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karneval krásných lidí — Letní dětský tábor Zhořec, 4.—6. 9. 2026</title>
+<title>Karneval krásných lidí · 4.–6. 9. 2026</title>
+<meta name="description" content="Karneval krásných lidí — 4.–6. 9. 2026, Letní dětský tábor Zhořec, Manětín.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Archivo:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+<div class="poster-frame">
 
-<!-- ===== HERO ===== -->
-<header class="hero">
-  <div class="tent-stripes" aria-hidden="true"></div>
+  <header class="bill">
+    <div class="corner corner-tl" aria-hidden="true">✶</div>
+    <div class="corner corner-tr" aria-hidden="true">✶</div>
 
-  <div class="hero-inner">
-    <p class="script-line">srdečně vás zveme na</p>
+    <p class="bill-eyebrow">
+      <span>✶</span> Představení se koná <span>✶</span>
+    </p>
 
-    <div class="marquee-frame" id="marqueeFrame">
-      <div class="bulbs bulbs-top" id="bulbsTop" aria-hidden="true"></div>
-      <div class="bulbs bulbs-bottom" id="bulbsBottom" aria-hidden="true"></div>
-      <div class="bulbs bulbs-left" id="bulbsLeft" aria-hidden="true"></div>
-      <div class="bulbs bulbs-right" id="bulbsRight" aria-hidden="true"></div>
+    <h1 class="bill-title">
+      <span class="line line-solid">Karneval</span>
+      <span class="line line-outline">krásných lidí</span>
+    </h1>
 
-      <h1 class="title">
-        <span class="title-line">Karneval</span>
-        <span class="title-line title-accent">krásných lidí</span>
-      </h1>
-    </div>
-
-    <p class="hero-sub">tři dny masek, muziky a dobrého jídla pod širým nebem</p>
-
-    <div class="hero-facts">
-      <div class="fact">
-        <span class="fact-label">Kdy</span>
-        <span class="fact-value">4.—6. září 2026</span>
-      </div>
-      <div class="fact-divider" aria-hidden="true">★</div>
-      <div class="fact">
-        <span class="fact-label">Kde</span>
-        <span class="fact-value">Letní dětský tábor Zhořec, Manětín</span>
-      </div>
-    </div>
-
-    <a href="#vstupenka" class="btn-ribbon">
-      <span>Vstupenka a program</span>
-      <svg class="btn-ribbon-arrow" width="14" height="10" viewBox="0 0 14 10" aria-hidden="true">
-        <path d="M1 1l6 7 6-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 220 220" class="badge-star">
+        <polygon points="110,4 128,74 200,60 148,112 200,160 128,146 110,216 92,146 20,160 72,112 20,60 92,74" />
       </svg>
-    </a>
-  </div>
+      <div class="badge-text">
+        <span class="badge-date">4. - 6.</span>
+        <span class="badge-month">ZÁŘÍ</span>
+        <span class="badge-year">2026</span>
+      </div>
+    </div>
 
-  <svg class="tent-edge" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,0 L0,40 L50,60 L100,40 L150,60 L200,40 L250,60 L300,40 L350,60 L400,40 L450,60 L500,40 L550,60 L600,40 L650,60 L700,40 L750,60 L800,40 L850,60 L900,40 L950,60 L1000,40 L1050,60 L1100,40 L1150,60 L1200,40 L1200,0 Z"></path>
-  </svg>
-</header>
+    <p class="bill-place">Letní dětský tábor Zhořec &nbsp;·&nbsp; Manětín</p>
+    <p class="bill-sub">Tři dny v lese pod maskami — hudba, víno a jedno utajené sobotní překvapení.</p>
+  </header>
 
-<!-- ===== TICKET / VSTUPENKA ===== -->
-<section class="ticket-section" id="vstupenka">
-  <div class="ticket">
-    <div class="ticket-main">
-      <p class="ticket-eyebrow">Admission ticket · No. 001</p>
-      <h2 class="ticket-title">Karneval krásných lidí</h2>
-      <div class="ticket-row">
-        <div>
-          <p class="ticket-label">Termín</p>
-          <p class="ticket-value">4.—6. 9. 2026</p>
+  <section class="notice-row" aria-label="Nejdůležitější informace">
+    <div class="notice">
+      <span class="notice-stamp">Nezapomeňte</span>
+      <p class="notice-text">Spacák nebo peřina, povlečení a polštář — v chatce vlastní.</p>
+    </div>
+    <div class="notice notice--ink">
+      <span class="notice-stamp">Platí se na místě</span>
+      <p class="notice-text">150 Kč / noc / osobu, v hotovosti při příjezdu. Vemte prosím přesnou částku, nevrací se.</p>
+    </div>
+  </section>
+
+  <main class="playbill">
+
+    <article class="act act--teal" id="kde">
+      <div class="act-label"><span>Místo</span></div>
+      <div class="act-body">
+        <h2>Zhořec u Manětína</h2>
+        <p>Letní dětský tábor Zhořec, 331&nbsp;62 Manětín. Od pátku 4.&nbsp;9. do neděle 6.&nbsp;9. 2026 — kus lesa, který si přeznačíme na karnevalové návětí.</p>
+
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Letn%C3%AD+d%C4%9Btsk%C3%BD+t%C3%A1bor+Zho%C5%99ec%2C+331+62+Man%C4%9Bt%C3%ADn&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa — Letní dětský tábor Zhořec, Manětín">
+          </iframe>
         </div>
-        <div>
-          <p class="ticket-label">Místo konání</p>
-          <p class="ticket-value">Letní dětský tábor Zhořec</p>
+
+        <a class="ticket-link" href="https://maps.app.goo.gl/a7pi2Jo4uN8bvBas9" target="_blank" rel="noopener">Otevřít cestu v Mapách →</a>
+      </div>
+    </article>
+
+    <article class="act act--brick" id="noclech">
+      <div class="act-label"><span>Nocleh</span></div>
+      <div class="act-body">
+        <h2>Chatky v lese</h2>
+        <p>Spíme v táborových chatkách. S sebou si přivezte spacák nebo peřinu, povlečení a polštář.</p>
+        <ul class="tag-list">
+          <li>Spacák / peřina</li>
+          <li>Povlečení</li>
+          <li>Polštář</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="act act--mustard" id="vstupne">
+      <div class="act-label"><span>Vstupné</span></div>
+      <div class="act-body">
+        <h2>150 Kč za noc</h2>
+        <p>V hotovosti, hned při příjezdu — <strong>150 Kč za noc a osobu</strong>. Prosíme o přesnou částku, na místě se nevrací.</p>
+      </div>
+    </article>
+
+    <article class="act act--teal" id="pohosteni">
+      <div class="act-label"><span>Pohoštění</span></div>
+      <div class="act-body">
+        <h2>Sklenku máme, stačí přijet</h2>
+        <p>Na místě je zajištěné pivo, prosecco i bílé víno, stejně jako občerstvení po celou dobu karnevalu.</p>
+        <ul class="tag-list">
+          <li>Pivo</li>
+          <li>Prosecco</li>
+          <li>Bílé víno</li>
+          <li>Občerstvení</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="act act--brick" id="program">
+      <div class="act-label"><span>Program</span></div>
+      <div class="act-body">
+        <h2>Dva večery, jedno tajemství</h2>
+        <div class="program-row">
+          <span class="program-day">Pátek</span>
+          <span class="program-event">Zahraje <strong>Paperback&nbsp;music</strong></span>
+        </div>
+        <div class="program-row">
+          <span class="program-day">Sobota</span>
+          <span class="program-event">Velké odpolední překvapení <em>(utajeno)</em></span>
         </div>
       </div>
-      <p class="ticket-note">Vstup pouze v masce, dobré náladě a s otevřenou náručí.</p>
-    </div>
-
-    <div class="ticket-perf" aria-hidden="true"></div>
-
-    <div class="ticket-stub">
-      <p class="stub-label">Odpočet</p>
-      <div class="countdown" id="countdown">
-        <div class="cd-block"><span class="cd-num" id="cdDays">00</span><span class="cd-unit">dní</span></div>
-        <div class="cd-block"><span class="cd-num" id="cdHours">00</span><span class="cd-unit">hod</span></div>
-        <div class="cd-block"><span class="cd-num" id="cdMinutes">00</span><span class="cd-unit">min</span></div>
-      </div>
-      <p class="stub-foot">do zahájení</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROGRAM / ACTS ===== -->
-<section class="program-section">
-  <p class="section-eyebrow">Program</p>
-  <h2 class="section-title">Tři dny pod plachtou</h2>
-
-  <div class="acts">
-    <article class="act">
-      <p class="act-mark">Act I</p>
-      <p class="act-date">4. září, pátek</p>
-      <h3 class="act-name">Příjezd a slavnostní zahájení</h3>
-      <p class="act-text">Postavíme stany, zapálíme první oheň a přípitkem otevřeme karneval. Večer patří seznamování a lehké hudbě u ohně.</p>
     </article>
 
-    <article class="act">
-      <p class="act-mark">Act II</p>
-      <p class="act-date">5. září, sobota</p>
-      <h3 class="act-name">Velký maškarní den</h3>
-      <p class="act-text">Hlavní program: hry, soutěže, dobré jídlo a večerní maškarní bál pod girlandami světel. Masky vítány, čím odvážnější, tím lépe.</p>
-    </article>
+  </main>
 
-    <article class="act">
-      <p class="act-mark">Act III</p>
-      <p class="act-date">6. září, neděle</p>
-      <h3 class="act-name">Pomalé probuzení a rozloučení</h3>
-      <p class="act-text">Snídaně v trávě, poslední fotky, sbalení stanů a odjezd domů s hlavou plnou vzpomínek.</p>
-    </article>
-  </div>
-</section>
+  <footer class="bill-footer">
+    <div class="corner corner-bl" aria-hidden="true">✶</div>
+    <div class="corner corner-br" aria-hidden="true">✶</div>
+    <p class="footer-title">Karneval krásných lidí</p>
+    <p class="footer-fine">Zhořec, Manětín &nbsp;·&nbsp; 4.—6. 9. 2026 &nbsp;·&nbsp; Maska vítána, převlek ještě víc</p>
+  </footer>
 
-<!-- ===== PRAKTICKÉ INFO ===== -->
-<section class="info-section">
-  <p class="section-eyebrow">Než vyrazíte</p>
-  <h2 class="section-title">Co vzít s sebou</h2>
-
-  <div class="info-grid">
-    <div class="info-card">
-      <span class="info-icon">🎭</span>
-      <h3>Masku nebo kostým</h3>
-      <p>Karneval bez masky není karneval. Fantazii se meze nekladou.</p>
-    </div>
-    <div class="info-card">
-      <span class="info-icon">⛺</span>
-      <h3>Stan a spacák</h3>
-      <p>Spíme pod širákem — na místě je dost místa pro stanování.</p>
-    </div>
-    <div class="info-card">
-      <span class="info-icon">🍷</span>
-      <h3>Něco na přípitek</h3>
-      <p>O jídlo je postaráno, ale vlastní oblíbená lahev vždy potěší.</p>
-    </div>
-    <div class="info-card">
-      <span class="info-icon">☀️</span>
-      <h3>Dobrou náladu</h3>
-      <p>Zářijové počasí bývá přívětivé, náladu si ale přivezte vlastní.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== RSVP ===== -->
-<footer class="rsvp-section">
-  <p class="script-line light">poslední zastávka</p>
-  <h2 class="rsvp-title">Přijedete?</h2>
-  <p class="rsvp-text">Dejte nám vědět, ať víme, kolik masek vás máme čekat.</p>
-
-  <button class="btn btn-solid" id="rsvpBtn">Chystám se! 🎉</button>
-  <p class="rsvp-confirm" id="rsvpConfirm" role="status" aria-live="polite"></p>
-
-  <p class="rsvp-contact">Otázky pište na <a href="mailto:pozvanka@karneval.cz">pozvanka@karneval.cz</a></p>
-
-  <p class="rsvp-signoff">Karneval krásných lidí · Letní dětský tábor Zhořec · 4.—6. 9. 2026</p>
-</footer>
+</div>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
