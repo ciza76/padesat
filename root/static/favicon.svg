@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Pozadí ikony (Papír) -->
+  <rect width="64" height="64" rx="12" fill="#efdfae"/>
+  
+  <!-- Vnější rám - styl vintage lístku s vykrojenými rohy -->
+  <path d="M 12 8 
+           H 52 
+           A 4 4 0 0 1 56 12 
+           V 28 
+           A 4 4 0 0 0 56 36 
+           V 52 
+           A 4 4 0 0 1 52 56 
+           H 12 
+           A 4 4 0 0 1 8 52 
+           V 36 
+           A 4 4 0 0 0 8 28 
+           V 12 
+           A 4 4 0 0 1 12 8 Z" 
+        fill="#ab3b28" stroke="#221a13" stroke-width="2.5" />
+
+  <!-- Vnitřní dekorativní kosočtverec (Diamond) -->
+  <polygon points="32,18 44,32 32,46 20,32" fill="#f7ecc9" stroke="#221a13" stroke-width="2" />
+  
+  <!-- Středová tečka -->
+  <circle cx="32" cy="32" r="3" fill="#ab3b28" />
+</svg>

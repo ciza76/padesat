@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import os
 
 app = Flask(__name__)
@@ -7,6 +7,14 @@ app.config['SECRET_KEY'] = '01e8b1c0bb4c2340d8d16db0d1ed43adf917858700e48391b06c
 @app.route("/")
 def index():
     return render_template('index.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'favicon.svg',
+        mimetype='image/svg+xml'
+    )
 
 @app.after_request
 def add_no_cache_headers(response):
