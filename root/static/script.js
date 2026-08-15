@@ -34,7 +34,7 @@ window.addEventListener("resize", () => {
 });
 
 // ============ COUNTDOWN ============
-const EVENT_DATE = new Date("2026-08-04T15:00:00+02:00");
+const EVENT_DATE = new Date("2026-09-04T14:00:00+02:00");
 
 function updateCountdown(){
   const now = new Date();
