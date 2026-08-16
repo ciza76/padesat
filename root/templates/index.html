@@ -3,130 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oslava krásných lidí 4. - 6. 9. 2026</title>
-<meta name="description" content="Oslava krásných lidí — 4. - 6. 9. 2026, Letní dětský tábor Zhořec, Manětín.">
+<title>Oslava krásných lidí · 4. - 6. 9. 2026</title>
+<meta name="description" content="Oslava krásných lidí — 4.–6. 9. 2026, Letní dětský tábor Zhořec, Manětín.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Archivo:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<div class="poster-frame">
+<header class="topbar">
+  <a class="topbar-logo" href="#top">FKL·26</a>
 
-  <header class="bill">
-    <div class="corner corner-tl" aria-hidden="true">❖</div>
-    <div class="corner corner-tr" aria-hidden="true">❖</div>
+  <nav class="topnav" aria-label="Hlavní navigace">
+    <a href="#dulezite">Nejdůležitější</a>
+    <a href="#kde">Místo</a>
+    <a href="#noclech">Nocleh</a>
+    <a href="#vstupne">Vstupné</a>
+    <a href="#pohosteni">Pohoštění</a>
+    <a href="#program">Itinerář</a>
+  </nav>
 
-    <p class="bill-eyebrow">
-      <span>◆</span> Představení se koná <span>◆</span>
-    </p>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-    <h1 class="bill-title">
-      <span class="line line-solid">Oslava</span>
-      <span class="line line-outline">krásných lidí</span>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobilní navigace" hidden>
+  <a href="#dulezite">Nejdůležitější</a>
+  <a href="#kde">Místo</a>
+  <a href="#noclech">Nocleh</a>
+  <a href="#vstupne">Vstupné</a>
+  <a href="#pohosteni">Pohoštění</a>
+  <a href="#program">Itinerář</a>
+</nav>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="hero-tag">Soukromá oslava <strong class="hero-accent">4. - 6. 9. 2026</strong></p>
+    <h1 class="hero-title">
+      FESTIVAL<br>
+      <span class="hero-accent">KRÁSNÝCH</span><br>
+      LIDÍ
     </h1>
+    <p class="hero-sub">
+      Hudba, pivo, víno, tanec a jedno utajené sobotní překvapení.<br />
+      Oslavenci: Velká a malá Péťa, Číža, Kuba, Skaut
+    </p>
+    <div class="hero-facts">
+      <span><a href="https://maps.app.goo.gl/a7pi2Jo4uN8bvBas9" target="_blank">Letní dětský tábor Zhořec</a></span>
+      <span>Manětín</span>
+      <span>Pá - Ne</span>
+    </div>
 
-    <div class="badge" aria-hidden="true">
-      <svg viewBox="0 0 220 220" class="badge-star">
-        <circle cx="110" cy="110" r="100" />
-        <circle cx="110" cy="110" r="92" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="6 4" />
-      </svg>
-      <div class="badge-text">
-        <span class="badge-date">4. - 6.</span>
-        <span class="badge-month">ZÁŘÍ</span>
-        <span class="badge-year">2026</span>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <p class="countdown-label">Do začátku festivalu zbývá</p>
+      <div class="countdown-grid">
+        <div class="countdown-cell">
+          <span class="countdown-num" id="cd-days">–</span>
+          <span class="countdown-unit">dní</span>
+        </div>
+        <div class="countdown-cell">
+          <span class="countdown-num" id="cd-hours">–</span>
+          <span class="countdown-unit">hodin</span>
+        </div>
+        <div class="countdown-cell">
+          <span class="countdown-num" id="cd-minutes">–</span>
+          <span class="countdown-unit">minut</span>
+        </div>
+        <div class="countdown-cell">
+          <span class="countdown-num" id="cd-seconds">–</span>
+          <span class="countdown-unit">sekund</span>
+        </div>
       </div>
-    </div>
-
-    <p class="bill-place">Letní dětský tábor Zhořec &nbsp;◆&nbsp; Manětín</p>
-    <p class="bill-sub">Hudba, pivo, víno tanec a jedno utajené sobotní překvapení.</p>
-  </header>
-
-  <section class="notice-row" aria-label="Nejdůležitější informace">
-    <div class="notice">
-      <span class="notice-stamp">Nezapomeňte</span>
-      <p class="notice-text">Spacák nebo peřina, povlečení a polštář.</p>
-    </div>
-    <div class="notice notice--ink">
-      <span class="notice-stamp">Platí se na místě</span>
-      <p class="notice-text">150 Kč / noc / osobu, v hotovosti při příjezdu Čvanče. Vemte prosím přesnou částku, nevrací se.</p>
     </div>
   </section>
 
-  <main class="playbill">
+  <section class="strip" id="dulezite" aria-label="Nejdůležitější informace">
+    <div class="strip-cell">
+      <svg class="strip-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6a2 2 0 012 2v11a5 5 0 01-10 0V5a2 2 0 012-2z"/><path d="M7 9h10"/><path d="M7 13h10"/></svg>
+      <h2>Vezměte spacák</h2>
+      <p>Spacák nebo peřinu, povlečení, prostěradlo a polštář.</p>
+    </div>
+    <div class="strip-cell strip-cell--accent">
+      <svg class="strip-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M9.3 9.6c0-1.1 1.1-1.8 2.7-1.8s2.7.8 2.7 1.7c0 2.2-5.4 1.5-5.4 3.7 0 1 1.1 1.7 2.7 1.7s2.7-.7 2.7-1.7"/></svg>
+      <h2>150 Kč / noc / osoba</h2>
+      <p>V hotovosti při příjezdu Čvanče. Přesnou částku prosím - nevrací se.</p>
+    </div>
+    <div class="strip-cell">
+      <svg class="strip-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h11v10a2 2 0 01-2 2H7a2 2 0 01-2-2V8z"/><path d="M16 10h1.5a2 2 0 012 2v2a2 2 0 01-2 2H16"/><path d="M5 8V6a1 1 0 011-1h9a1 1 0 011 1v2"/></svg>
+      <h2>Vlastní půllitr</h2>
+      <p>Na pivo si vezměte svůj!</p>
+    </div>
+  </section>
 
-    <article class="act act--teal" id="kde">
-      <div class="act-label"><span>Místo</span></div>
-      <div class="act-body">
-        <h2>Zhořec u Manětína</h2>
-        <p>Letní dětský tábor Zhořec, Manětín. Od pátku 4.&nbsp;9. do neděle 6.&nbsp;9. 2026.</p>
-        <a class="ticket-link" href="https://maps.app.goo.gl/a7pi2Jo4uN8bvBas9" target="_blank" rel="noopener">Otevřít cestu v Mapách →</a>
-      </div>
-    </article>
+  <section class="block" id="kde">
+    <div class="block-head">
+      <svg class="block-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <h2>Místo</h2>
+    </div>
+    <div class="block-body">
+      <h3>Zhořec u Manětína</h3>
+      <p>Letní dětský tábor Zhořec, Manětín. Od pátku 4. 9. do neděle 6. 9. 2026.</p>
+      <a class="cta" href="https://maps.app.goo.gl/a7pi2Jo4uN8bvBas9" target="_blank" rel="noopener">Otevřít v Mapách →</a>
+    </div>
+  </section>
 
-    <article class="act act--brick" id="noclech">
-      <div class="act-label"><span>Nocleh</span></div>
-      <div class="act-body">
-        <h2>Chatky v lese</h2>
-        <p>Spíme v táborových chatkách. S sebou si přivezte spacák nebo peřinu, povlečení a polštář.</p>
-        <ul class="tag-list">
-          <li>Spacák / peřina</li>
-          <li>Povlečení</li>
-          <li>Polštář</li>
-        </ul>
-      </div>
-    </article>
+  <section class="block block--alt" id="noclech">
+    <div class="block-head">
+      <svg class="block-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V11L12 4l8 7v10"/><path d="M9 21v-7h6v7"/></svg>
+      <h2>Nocleh</h2>
+    </div>
+    <div class="block-body">
+      <h3>Chatky v lese</h3>
+      <p>Spíme v táborových chatkách. S sebou si přivezte spacák nebo peřinu, povlečení, prostěradlo a polštář.</p>
+      <ul class="tag-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6a2 2 0 012 2v11a5 5 0 01-10 0V5a2 2 0 012-2z"/><path d="M7 9h10"/><path d="M7 13h10"/></svg>Spacák / peřina</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="10" rx="2"/><path d="M3 12h18"/></svg>Povlečení a prostěradlo</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="5"/><path d="M9 9c1 1 1 6 0 6"/><path d="M15 9c-1 1-1 6 0 6"/></svg>Polštář</li>
+      </ul>
+    </div>
+  </section>
 
-    <article class="act act--mustard" id="vstupne">
-      <div class="act-label"><span>Čvanče po příjezdu</span></div>
-      <div class="act-body">
-        <h2>150 Kč za noc</h2>
-        <p>V hotovosti, hned při příjezdu - <strong>150 Kč za noc a osobu</strong>. Prosíme o přesnou částku, na místě se nevrací.</p>
-      </div>
-    </article>
+  <section class="block" id="vstupne">
+    <div class="block-head">
+      <svg class="block-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M9.3 9.6c0-1.1 1.1-1.8 2.7-1.8s2.7.8 2.7 1.7c0 2.2-5.4 1.5-5.4 3.7 0 1 1.1 1.7 2.7 1.7s2.7-.7 2.7-1.7"/></svg>
+      <h2>Čvanče po příjezdu</h2>
+    </div>
+    <div class="block-body">
+      <h3>150 Kč za noc</h3>
+      <p>V hotovosti, hned při příjezdu - <strong>150 Kč za noc a osobu</strong>. Prosíme o přesnou částku, na místě se nevrací.</p>
+    </div>
+  </section>
 
-    <article class="act act--teal" id="pohosteni">
-      <div class="act-label"><span>Pohoštění</span></div>
-      <div class="act-body">
-        <h2>Sklenku máme, stačí přijet</h2>
-        <p>Na místě je zajištěné pivo, prosecco i bílé víno, stejně jako občerstvení po celou dobu oslavy.</p>
-        <ul class="tag-list">
-          <li>Pivo</li>
-          <li>Prosecco</li>
-          <li>Bílé víno</li>
-          <li>Občerstvení</li>
-        </ul>
-      </div>
-    </article>
+  <section class="block block--alt" id="pohosteni">
+    <div class="block-head">
+      <svg class="block-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10c0 5-2 8-5 8s-5-3-5-8z"/><path d="M12 11v7"/><path d="M8 21h8"/></svg>
+      <h2>Pohoštění</h2>
+    </div>
+    <div class="block-body">
+      <h3>Sklenku máme, stačí přijet</h3>
+      <p>Na místě je zajištěné pivo, prosecco i bílé víno, stejně jako jídlo po celou dobu oslavy.</p>
+      <ul class="tag-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h11v10a2 2 0 01-2 2H7a2 2 0 01-2-2V8z"/><path d="M16 10h1.5a2 2 0 012 2v2a2 2 0 01-2 2H16"/><path d="M5 8V6a1 1 0 011-1h9a1 1 0 011 1v2"/></svg>Pivo</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l-1 9a2 2 0 01-2 2 2 2 0 01-2-2L9 3z"/><path d="M12 14v7"/><path d="M9 21h6"/></svg>Prosecco</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10c0 5-2 8-5 8s-5-3-5-8z"/><path d="M12 11v7"/><path d="M8 21h8"/></svg>Bílé víno</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v7a2 2 0 004 0V3"/><path d="M8 12v9"/><path d="M17 3c-1.6 0-3 1.6-3 4s1.4 4 3 4v10"/></svg>Jídlo</li>
+      </ul>
+    </div>
+  </section>
 
-    <article class="act act--brick" id="program">
-      <div class="act-label"><span>Program</span></div>
-      <div class="act-body">
-        <h2>Dva večery, jedno tajemství</h2>
-        <div class="program-row">
-          <span class="program-day">Pátek</span>
-          <span class="program-event">Zahraje <strong>Paperback&nbsp;music</strong></span>
-        </div>
-        <div class="program-row">
-          <span class="program-day">Sobota</span>
-          <span class="program-event">Velké odpolední překvapení <em>(utajeno)</em></span>
-        </div>
-      </div>
-    </article>
+  <section class="block" id="program">
+    <div class="block-head">
+      <svg class="block-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>
+      <h2>Itinerář</h2>
+    </div>
+    <div class="block-body">
+      <h3>Dva dny, čtyři zastávky</h3>
 
-  </main>
+      <table class="timetable">
+        <tbody>
+          <tr>
+            <th scope="row">Pátek<span>20:30</span></th>
+            <td>Zahraje <strong><a href="https://www.paperbackmusic.cz/" target="_blank">Paperback&nbsp;Music</a></strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Sobota<span>Po poledni</span></th>
+            <td>Výlet do <strong><a href="https://maps.app.goo.gl/m8fpd27tMrMCdnKQ9" target="_blank">Kostela sv. Jiří</a></strong> v&nbsp;Manětíně</td>
+          </tr>
+          <tr>
+            <th scope="row">Sobota<span>Odpoledne</span></th>
+            <td><strong>Překvapení</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Sobota<span>Večer</span></th>
+            <td><strong>Kémo DJs</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-  <footer class="bill-footer">
-    <div class="corner corner-bl" aria-hidden="true">❖</div>
-    <div class="corner corner-br" aria-hidden="true">❖</div>
-    <p class="footer-title">Oslava krásných lidí</p>
-    <p class="footer-fine">Zhořec, Manětín &nbsp;◆&nbsp; 4. - 6. 9. 2026 &nbsp;◆&nbsp; Maska vítána, převlek ještě víc</p>
-  </footer>
+</main>
 
-</div>
+<footer class="footer">
+  <p class="footer-title">FESTIVAL KRÁSNÝCH LIDÍ</p>
+  <p class="footer-fine">FKL Ltd. © 2026. No Rights Reserved.</p>
+</footer>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
