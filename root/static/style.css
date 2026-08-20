@@ -130,6 +130,8 @@ a{ color:inherit; }
    Hero
 --------------------------------------------- */
 .hero{
+  position:relative;
+  overflow:hidden;
   max-width:var(--container);
   margin:0 auto;
   padding:3.6rem 1.25rem 2.6rem;
